@@ -31,6 +31,13 @@ jobs:
 
     - name: Run Selenium Tests
       run: |
-        python run_test.py
+        mkdir pytest-results
+        python -m pytest --junitxml=pytest-results/pytest-results.xml run_test.py
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: pytest-results
+        path: pytest-results
 
       
