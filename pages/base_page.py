@@ -13,5 +13,5 @@ class BasePage():
         # testing cookies, 
         # reviewing forms on webpage, 
         # evaluating database security, 
-        # and validating CSS or HTML. ""
+        # and validating CSS or HTML. 
         pass
