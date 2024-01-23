@@ -41,8 +41,7 @@ jobs:
     - name: Install xvfb
       run: sudo apt-get install xvfb
 
-    - name: Running the Python script
-      run: python Selenium-Template.py
+   
 
     - name: Run Selenium Tests
       run: |
