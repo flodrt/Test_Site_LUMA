@@ -23,7 +23,7 @@ class BaseTest(unittest.TestCase):
         print ("#####################################################################################", user_error_msg)
         # b) Check that the number of errors is equal to 1.
         self.assertEqual(1, len(user_error_msg))
-        # c) Check if error message is "This is required field" #
+        # c) Check if error message is "This is required field" 
         self.assertEqual("This is a required field.", user_error_msg[0].text)
 
     def tearDown(self):
